@@ -1,0 +1,26 @@
+$ umask 022 && mkdir -p "/Users/gavingray/dev/prj/rust/dist/lib/rustlib"
+$ echo "3" > "/Users/gavingray/dev/prj/rust/dist/lib/rustlib/rust-installer-version"
+install: creating uninstall script at /Users/gavingray/dev/prj/rust/dist/lib/rustlib/uninstall.sh
+$ cp /Users/gavingray/dev/prj/rust/build/tmp/tarball/miri/wasm32-wasi/miri-1.80.0-dev-wasm32-wasi/install.sh /Users/gavingray/dev/prj/rust/dist/lib/rustlib/uninstall.sh
+install: installing component 'miri-preview'
+$ echo "miri-preview" >> "/Users/gavingray/dev/prj/rust/dist/lib/rustlib/components"
+$ umask 022 && mkdir -p "/Users/gavingray/dev/prj/rust/dist/bin"
+install: copying file /Users/gavingray/dev/prj/rust/dist/bin/miri.wasm
+$ cp /Users/gavingray/dev/prj/rust/build/tmp/tarball/miri/wasm32-wasi/miri-1.80.0-dev-wasm32-wasi/miri-preview/bin/miri.wasm /Users/gavingray/dev/prj/rust/dist/bin/miri.wasm
+$ chmod 755 /Users/gavingray/dev/prj/rust/dist/bin/miri.wasm
+$ echo "file:/Users/gavingray/dev/prj/rust/dist/bin/miri.wasm" >> "/Users/gavingray/dev/prj/rust/dist/lib/rustlib/manifest-miri-preview"
+$ umask 022 && mkdir -p "/Users/gavingray/dev/prj/rust/dist/share/doc/miri"
+install: copying file /Users/gavingray/dev/prj/rust/dist/share/doc/miri/LICENSE-APACHE
+$ cp /Users/gavingray/dev/prj/rust/build/tmp/tarball/miri/wasm32-wasi/miri-1.80.0-dev-wasm32-wasi/miri-preview/share/doc/miri/LICENSE-APACHE /Users/gavingray/dev/prj/rust/dist/share/doc/miri/LICENSE-APACHE
+$ chmod 644 /Users/gavingray/dev/prj/rust/dist/share/doc/miri/LICENSE-APACHE
+$ echo "file:/Users/gavingray/dev/prj/rust/dist/share/doc/miri/LICENSE-APACHE" >> "/Users/gavingray/dev/prj/rust/dist/lib/rustlib/manifest-miri-preview"
+$ umask 022 && mkdir -p "/Users/gavingray/dev/prj/rust/dist/share/doc/miri"
+install: copying file /Users/gavingray/dev/prj/rust/dist/share/doc/miri/LICENSE-MIT
+$ cp /Users/gavingray/dev/prj/rust/build/tmp/tarball/miri/wasm32-wasi/miri-1.80.0-dev-wasm32-wasi/miri-preview/share/doc/miri/LICENSE-MIT /Users/gavingray/dev/prj/rust/dist/share/doc/miri/LICENSE-MIT
+$ chmod 644 /Users/gavingray/dev/prj/rust/dist/share/doc/miri/LICENSE-MIT
+$ echo "file:/Users/gavingray/dev/prj/rust/dist/share/doc/miri/LICENSE-MIT" >> "/Users/gavingray/dev/prj/rust/dist/lib/rustlib/manifest-miri-preview"
+$ umask 022 && mkdir -p "/Users/gavingray/dev/prj/rust/dist/share/doc/miri"
+install: copying file /Users/gavingray/dev/prj/rust/dist/share/doc/miri/README.md
+$ cp /Users/gavingray/dev/prj/rust/build/tmp/tarball/miri/wasm32-wasi/miri-1.80.0-dev-wasm32-wasi/miri-preview/share/doc/miri/README.md /Users/gavingray/dev/prj/rust/dist/share/doc/miri/README.md
+$ chmod 644 /Users/gavingray/dev/prj/rust/dist/share/doc/miri/README.md
+$ echo "file:/Users/gavingray/dev/prj/rust/dist/share/doc/miri/README.md" >> "/Users/gavingray/dev/prj/rust/dist/lib/rustlib/manifest-miri-preview"
